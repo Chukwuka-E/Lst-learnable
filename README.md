@@ -1,10 +1,10 @@
 ## Learnable 24 Backend Standardisation Test
-## This is one of my last project with learnable, my banking API built for the Learnable 24 Backend Standardisation Test. Crafted with Node.js, TypeScript, Express, and MongoDB, it’s a secure, scalable system that powers core banking operations with a focus on reliability and clean code.
+ This is one of my last project with learnable, my banking API built for the Learnable 24 Backend Standardisation Test. Crafted with Node.js, TypeScript, Express, and MongoDB, it’s a secure, scalable system that powers core banking operations with a focus on reliability and clean code.
 ## Features
 
-## Account Creation: The POST /api/accounts endpoint lets users create accounts with auto-generated virtual cards, encrypting sensitive data like phone numbers and dates of birth using AES for top-notch security.
-## Account Listing: The GET /api/accounts endpoint retrieves all accounts, complete with their linked virtual cards, displaying both encrypted and decrypted data for transparency.
-## Data Decryption: The POST /api/decrypt endpoint securely decrypts fields like card numbers, ensuring safe access to sensitive info.
+1.  Account Creation: The POST /api/accounts endpoint lets users create accounts with auto-generated virtual cards, encrypting sensitive data like phone numbers and dates of birth using AES for top-notch security.
+2. Account Listing: The GET /api/accounts endpoint retrieves all accounts, complete with their linked virtual cards, displaying both encrypted and decrypted data for transparency.
+3. Data Decryption: The POST /api/decrypt endpoint securely decrypts fields like card numbers, ensuring safe access to sensitive info.
 
 
 ## Favorite Custodian
