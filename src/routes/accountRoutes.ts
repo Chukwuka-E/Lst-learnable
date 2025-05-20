@@ -4,7 +4,9 @@ import { createAccountHandler, getAccounts, decryptFields } from '../controllers
 const router = Router();
 
 router.post('/accounts', createAccountHandler);
+
 router.get('/accounts', getAccounts);
+    
 router.post('/decrypt', decryptFields);
 
 export default router;

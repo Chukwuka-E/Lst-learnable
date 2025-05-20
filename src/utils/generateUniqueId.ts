@@ -3,6 +3,7 @@ import Account from '../models/accountModel';
 import Card from '../models/cardModel';
 import { encrypt } from '../services/encryptionService';
 
+// when getting a uniiqueId
 export const generateUniqueId = async (length: number): Promise<string> => {
   let id: string;
   let isUnique = false;

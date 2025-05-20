@@ -1,3 +1,4 @@
+// to generate expiring date for the card
 export const generateExpiryDate = (): string => {
   const date = new Date();
   date.setFullYear(date.getFullYear() + 3);

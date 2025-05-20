@@ -23,12 +23,12 @@ export const createAccount = async (input: IAccountInput) => {
     phoneNumber: encryptedPhone,
     dateOfBirth: encryptedDob,
     accountNumber,
-    cards: [], // Initialize cards array
+    cards: [],
   });
 
   await account.save();
 
-  // Generate virtual card
+  // To Generate virtual card
   const cardNumber = await generateUniqueId(16);
   const cvv = await generateUniqueId(3);
   const encryptedCardNumber = encrypt(cardNumber);
@@ -44,9 +44,9 @@ export const createAccount = async (input: IAccountInput) => {
 
   await card.save();
 
-  // Add card to account's cards array
-  account.cards = account.cards || []; // Ensure cards is not undefined
-  account.cards.push(card._id as mongoose.Types.ObjectId); // Explicitly cast _id
+  // To add card to account's cards array
+  account.cards = account.cards || []; 
+  account.cards.push(card._id as mongoose.Types.ObjectId);
   await account.save();
 
   return { account, card };
