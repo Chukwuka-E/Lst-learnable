@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "e2cfb212-4bb6-4054-ab45-4958b79b4d54",
+		"name": "learnable Lst",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42949149",
+		"_collection_link": "https://www.postman.com/material-physicist-78774614/workspace/chukwuka/collection/42949149-e2cfb212-4bb6-4054-ab45-4958b79b4d54?action=share&source=collection_link&creator=42949149"
+	},
+	"item": [
+		{
+			"name": "Create Accounts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Chukwuka\",\r\n  \"surname\": \"Emenike\",\r\n  \"email\": \"emenikechukwuka275@gmail.com\",\r\n  \"phoneNumber\": \"08167881530\",\r\n  \"dateOfBirth\": \"2004-06-25\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"accounts"
+					]
+				},
+				"description": "To creates a new bank account and generates a virtual card. plus encrypts sensitive fields (phoneNumber, dateOfBirth, cardNumber, cvv) using AES encryption and Returns account details and card with encrypted and decrypted values.\n\n**For** ;\n\nTrial 1: Account Creation\n\nTrial 2: Virtual Card Forging\n\nTrial 3: Encryption Protocol"
+			},
+			"response": []
+		},
+		{
+			"name": "Get account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"accounts"
+					]
+				},
+				"description": "To retrieves a list of all accounts with their associated virtual cards. Returns encrypted and decrypted values for phoneNumber, dateOfBirth, cardNumber, and cvv.\n\nFor Trial 4: Account Listing"
+			},
+			"response": []
+		},
+		{
+			"name": "Decrypt",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"phoneNumber\": \"U2FsdGVkX19xo4DvM+xcnl6aIr/a+MpS4AZ+i9V8YfA=\",\r\n  \"cardNumber\": \"U2FsdGVkX1+f4gJf6AaKXm9kqb8DlLbd0NIRq4v0RE22qAE/+Dt2E4Mt8y+6owVm\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/decrypt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"decrypt"
+					]
+				},
+				"description": "To decrypts provided encrypted data (e.g., phoneNumber, cardNumber) using AES decryption. Returns the plaintext values.\n\nFot Trial 4: Account Listing (Decryption)"
+			},
+			"response": []
+		}
+	]
+}
