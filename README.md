@@ -1,4 +1,4 @@
-## Lst-learnable: A Banking API That Packs a Punch!
+## Finable: A Banking API That Packs a Punch!
    
 Hey there! I’m Chukwuka, and Lst-learnable is my stellar banking API built for the Learnable 24 Backend Standardisation Test. Crafted with Node.js, TypeScript, Express, and MongoDB, this is a secure, scalable powerhouse for core banking operations, blending clean code with unrelenting reliability.
 ## Overview
