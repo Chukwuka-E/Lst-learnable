@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "e2cfb212-4bb6-4054-ab45-4958b79b4d54",
+		"_postman_id": "f5a3a391-ede8-44dd-94a0-f29603f224f7",
 		"name": "Finable docs",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "42949149",
-		"_collection_link": "https://www.postman.com/material-physicist-78774614/workspace/chukwuka/collection/42949149-e2cfb212-4bb6-4054-ab45-4958b79b4d54?action=share&source=collection_link&creator=42949149"
+		"_collection_link": "https://www.postman.com/material-physicist-78774614/workspace/chukwuka/collection/42949149-f5a3a391-ede8-44dd-94a0-f29603f224f7?action=share&source=collection_link&creator=42949149"
 	},
 	"item": [
 		{
@@ -20,7 +20,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"firstName\": \"Chukwuka\",\r\n  \"surname\": \"Emenike\",\r\n  \"email\": \"emenikechukwuka3090@gmail.com\",\r\n  \"phoneNumber\": \"08167881530\",\r\n  \"dateOfBirth\": \"2004-06-25\"\r\n}",
+					"raw": "{\r\n  \"firstName\": \"Chukwuka\",\r\n  \"surname\": \"Emenike\",\r\n  \"email\": \"emenikechukwuka30300@gmail.com\",\r\n  \"phoneNumber\": \"08167881530\",\r\n  \"dateOfBirth\": \"2004-06-25\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -42,7 +42,54 @@
 				},
 				"description": "To creates a new bank account and generates a virtual card. plus encrypts sensitive fields (phoneNumber, dateOfBirth, cardNumber, cvv) using AES encryption and Returns account details and card with encrypted and decrypted values.\n\n**For** ;\n\nTrial 1: Account Creation\n\nTrial 2: Virtual Card Forging\n\nTrial 3: Encryption Protocol"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Example Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Chukwuka\",\r\n  \"surname\": \"Emenike\",\r\n  \"email\": \"emenikechukwuka40300@gmail.com\",\r\n  \"phoneNumber\": \"08167881530\",\r\n  \"dateOfBirth\": \"2004-06-25\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://finable.onrender.com/api/accounts",
+							"protocol": "https",
+							"host": [
+								"finable",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"accounts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"accountNumber\": \"0203238385\",\n    \"firstName\": \"Chukwuka\",\n    \"surname\": \"Emenike\",\n    \"email\": \"emenikechukwuka30300@gmail.com\",\n    \"phoneNumber\": {\n        \"encrypted\": \"e3aa1f8f8742df41bd8cde159aa92a27:374728d7cc01aa8dbba566914f4e8e3d\",\n        \"decrypted\": \"08167881530\"\n    },\n    \"dateOfBirth\": {\n        \"encrypted\": \"2a6c76ee63aebeaf19b51d9445a96c1c:4037e5ec320b939a0070cfa6ccfc8536\",\n        \"decrypted\": \"2004-06-25\"\n    },\n    \"card\": {\n        \"cardNumber\": {\n            \"encrypted\": \"7006570f59844d8ce6a91a7f28957367:3699a14c630a80afd86122acdfa70d8c818129f50b4426fa88726f793aa572bd\",\n            \"decrypted\": \"6450320845902452\"\n        },\n        \"cvv\": {\n            \"encrypted\": \"4c54c80893cf38ceffbd272aa5106af3:2346b4f0485287c43243ff1d7f0bd5f8\",\n            \"decrypted\": \"195\"\n        },\n        \"expiryDate\": \"05/28\"\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "Get account",
@@ -64,7 +111,39 @@
 				},
 				"description": "To retrieves a list of all accounts with their associated virtual cards. Returns encrypted and decrypted values for phoneNumber, dateOfBirth, cardNumber, and cvv.\n\nFor Trial 4: Account Listing"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Example Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://finable.onrender.com/api/accounts",
+							"protocol": "https",
+							"host": [
+								"finable",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"accounts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"accountNumber\": \"0203238385\",\n        \"fullName\": \"Chukwuka Emenike\",\n        \"email\": \"emenikechukwuka30300@gmail.com\",\n        \"phoneNumber\": {\n            \"encrypted\": \"e3aa1f8f8742df41bd8cde159aa92a27:374728d7cc01aa8dbba566914f4e8e3d\",\n            \"decrypted\": \"08167881530\"\n        },\n        \"dateOfBirth\": {\n            \"encrypted\": \"2a6c76ee63aebeaf19b51d9445a96c1c:4037e5ec320b939a0070cfa6ccfc8536\",\n            \"decrypted\": \"2004-06-25\"\n        },\n        \"cards\": [\n            {\n                \"cardNumber\": {\n                    \"encrypted\": \"7006570f59844d8ce6a91a7f28957367:3699a14c630a80afd86122acdfa70d8c818129f50b4426fa88726f793aa572bd\",\n                    \"decrypted\": \"6450320845902452\"\n                },\n                \"cvv\": {\n                    \"encrypted\": \"4c54c80893cf38ceffbd272aa5106af3:2346b4f0485287c43243ff1d7f0bd5f8\",\n                    \"decrypted\": \"195\"\n                },\n                \"expiryDate\": \"05/28\"\n            }\n        ]\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "Decrypt",
@@ -79,7 +158,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"phoneNumber\": \"U2FsdGVkX19xo4DvM+xcnl6aIr/a+MpS4AZ+i9V8YfA=\",\r\n  \"cardNumber\": \"U2FsdGVkX1+f4gJf6AaKXm9kqb8DlLbd0NIRq4v0RE22qAE/+Dt2E4Mt8y+6owVm\"\r\n}",
+					"raw": "{\r\n  \"phoneNumber\": \"e3aa1f8f8742df41bd8cde159aa92a27:374728d7cc01aa8dbba566914f4e8e3d\",\r\n  \"cardNumber\": \"7006570f59844d8ce6a91a7f28957367:3699a14c630a80afd86122acdfa70d8c818129f50b4426fa88726f793aa572bd\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -99,9 +178,56 @@
 						"decrypt"
 					]
 				},
-				"description": "To decrypts provided encrypted data (e.g., phoneNumber, cardNumber) using AES decryption. Returns the plaintext values.\n\nFot Trial 4: Account Listing (Decryption)"
+				"description": "To decrypts provided encrypted data (e.g., phoneNumber, cardNumber) using AES decryption. Returns the plaintext values.\n\nFor Trial 4: Account Listing (Decryption)"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Example Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"phoneNumber\": \"e3aa1f8f8742df41bd8cde159aa92a27:374728d7cc01aa8dbba566914f4e8e3d\",\r\n  \"cardNumber\": \"7006570f59844d8ce6a91a7f28957367:3699a14c630a80afd86122acdfa70d8c818129f50b4426fa88726f793aa572bd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://finable.onrender.com/api/decrypt",
+							"protocol": "https",
+							"host": [
+								"finable",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"decrypt"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"phoneNumber\": \"08167881530\",\n    \"cardNumber\": \"6450320845902452\"\n}"
+				}
+			]
 		}
 	]
 }
