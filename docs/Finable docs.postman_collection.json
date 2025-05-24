@@ -2,6 +2,7 @@
 	"info": {
 		"_postman_id": "f5a3a391-ede8-44dd-94a0-f29603f224f7",
 		"name": "Finable docs",
+		"description": "StartFragment\n\n# Finable Banking API\n\nWelcome to Finable Banking API, my slick banking API built for the Learnable 24 Backend Standardisation Test! Powered by Node.js, TypeScript, Express, and MongoDB, this API delivers secure, scalable banking operations with flair. Create accounts with auto-generated virtual cards, list accounts with encrypted and decrypted data, and decrypt sensitive info—all locked down with Crypto encryption. I’ve fine-tuned three-digit CVVs (e.g., 456) and used Node.js `crypto` for unique IDs. Dive into the endpoints below, hosted live at [https://finable.onrender.com](https://finable.onrender.com). Big thanks to Edeba for the guidance! Ready to bank? Let’s roll!",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "42949149",
 		"_collection_link": "https://www.postman.com/material-physicist-78774614/workspace/chukwuka/collection/42949149-f5a3a391-ede8-44dd-94a0-f29603f224f7?action=share&source=collection_link&creator=42949149"
