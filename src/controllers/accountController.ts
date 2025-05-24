@@ -53,7 +53,7 @@ export const getAccounts = async (_req: Request, res: Response) => {
     const accounts = await listAccounts();
     res.status(200).json(accounts);
   } catch (error) {
-    res.status(500).json({ error: 'Server error' });
+    res.status(500).json({ error: 'Omo Server don get error' });
   }
 };
 
@@ -63,6 +63,6 @@ export const decryptFields = async (req: Request, res: Response) => {
     const decrypted = await decryptData(validated);
     res.status(200).json(decrypted);
   } catch (error) {
-    res.status(400).json({ error: error instanceof Error ? error.message : 'Invalid input' });
+    res.status(400).json({ error: error instanceof Error ? error.message : 'Omo you don put wrong data  ' });
   }
 };

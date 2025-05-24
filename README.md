@@ -11,4 +11,4 @@
 I’m shouting out Edeba as my favorite custodian for their clear guidance and support, especially in nailing the documentation for Trial 5.
 
 ## Finable-hosted API Documentation
-The API is live at:" https://finable.onrender.com ". Check my docs/postman_collection.json for the Postman endpoints, detailing all the banking goodness!
+The API is live at:" https://finable.onrender.com ". Check my docs/postman_collection.json for the Postman endpoints, detailing all the banking goodness!. Thank you🙂🙂🙂🙂

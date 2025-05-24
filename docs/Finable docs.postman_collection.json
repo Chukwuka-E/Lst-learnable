@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "e2cfb212-4bb6-4054-ab45-4958b79b4d54",
-		"name": "learnable Lst",
+		"name": "Finable docs",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "42949149",
 		"_collection_link": "https://www.postman.com/material-physicist-78774614/workspace/chukwuka/collection/42949149-e2cfb212-4bb6-4054-ab45-4958b79b4d54?action=share&source=collection_link&creator=42949149"
@@ -20,7 +20,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"firstName\": \"Chukwuka\",\r\n  \"surname\": \"Emenike\",\r\n  \"email\": \"emenikechukwuka275@gmail.com\",\r\n  \"phoneNumber\": \"08167881530\",\r\n  \"dateOfBirth\": \"2004-06-25\"\r\n}",
+					"raw": "{\r\n  \"firstName\": \"Chukwuka\",\r\n  \"surname\": \"Emenike\",\r\n  \"email\": \"emenikechukwuka3090@gmail.com\",\r\n  \"phoneNumber\": \"08167881530\",\r\n  \"dateOfBirth\": \"2004-06-25\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -28,12 +28,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/accounts",
-					"protocol": "http",
+					"raw": "https://finable.onrender.com/api/accounts",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"finable",
+						"onrender",
+						"com"
 					],
-					"port": "3000",
 					"path": [
 						"api",
 						"accounts"
@@ -49,12 +50,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/accounts",
-					"protocol": "http",
+					"raw": "https://finable.onrender.com/api/accounts",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"finable",
+						"onrender",
+						"com"
 					],
-					"port": "3000",
 					"path": [
 						"api",
 						"accounts"
@@ -85,12 +87,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/decrypt",
-					"protocol": "http",
+					"raw": "https://finable.onrender.com/api/decrypt",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"finable",
+						"onrender",
+						"com"
 					],
-					"port": "3000",
 					"path": [
 						"api",
 						"decrypt"
