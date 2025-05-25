@@ -159,7 +159,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"phoneNumber\": \"e3aa1f8f8742df41bd8cde159aa92a27:374728d7cc01aa8dbba566914f4e8e3d\",\r\n  \"cardNumber\": \"7006570f59844d8ce6a91a7f28957367:3699a14c630a80afd86122acdfa70d8c818129f50b4426fa88726f793aa572bd\"\r\n}",
+					"raw": "{\r\n  \"phoneNumber\": \"e3aa1f8f8742df41bd8cde159aa92a27:374728d7cc01aa8dbba566914f4e8e3d\",\r\n  \"dateOfBirth\": \r\n            \"2a6c76ee63aebeaf19b51d9445a96c1c:4037e5ec320b939a0070cfa6ccfc8536\",\r\n  \"cardNumber\": \"7006570f59844d8ce6a91a7f28957367:3699a14c630a80afd86122acdfa70d8c818129f50b4426fa88726f793aa572bd\",\r\n   \"cvv\": \"4c54c80893cf38ceffbd272aa5106af3:2346b4f0485287c43243ff1d7f0bd5f8\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -195,7 +195,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"phoneNumber\": \"e3aa1f8f8742df41bd8cde159aa92a27:374728d7cc01aa8dbba566914f4e8e3d\",\r\n  \"cardNumber\": \"7006570f59844d8ce6a91a7f28957367:3699a14c630a80afd86122acdfa70d8c818129f50b4426fa88726f793aa572bd\"\r\n}",
+							"raw": "{\r\n  \"phoneNumber\": \"e3aa1f8f8742df41bd8cde159aa92a27:374728d7cc01aa8dbba566914f4e8e3d\",\r\n  \"dateOfBirth\": \r\n            \"2a6c76ee63aebeaf19b51d9445a96c1c:4037e5ec320b939a0070cfa6ccfc8536\",\r\n  \"cardNumber\": \"7006570f59844d8ce6a91a7f28957367:3699a14c630a80afd86122acdfa70d8c818129f50b4426fa88726f793aa572bd\",\r\n   \"cvv\": \"4c54c80893cf38ceffbd272aa5106af3:2346b4f0485287c43243ff1d7f0bd5f8\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -226,7 +226,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"phoneNumber\": \"08167881530\",\n    \"cardNumber\": \"6450320845902452\"\n}"
+					"body": "{\n    \"phoneNumber\": \"08167881530\",\n    \"dateOfBirth\": \"2004-06-25\",\n    \"cardNumber\": \"6450320845902452\",\n    \"cvv\": \"195\"\n}"
 				}
 			]
 		}

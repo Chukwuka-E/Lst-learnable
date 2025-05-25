@@ -19,13 +19,13 @@ Big love to my favorite custodian, Edeba, for their top-notch guidance. Your ins
 API Documentation
 
 Live API: Explore the action at "https://finable.onrender.com".
-Postman Collection: for the live postman documentation Dive check my published link; "https://documenter.getpostman.com/view/42949149/2sB2qcBLVn" or check into docs/postman_collection.json for detailed endpoints, covering account creation, listing, and decryption.
+Postman Collection: for the live postman documentation Dive check my published link; "https://documenter.getpostman.com/view/42949149/2sB2qcCg7t" or check into docs/postman_collection.json for detailed endpoints, covering account creation, listing, and decryption.
 
 Deployment
 Finable is hosted on Render with MongoDB Atlas for seamless scalability. Check it out live at " https://finable.onrender.com " Faced deployment hiccups? I tackled TypeScript errors and MongoDB whitelist issues to ensure a smooth ride.
 Try It Out!
 
 GitHub Repo: See the code magic at "https://github.com/Chukwuka-E/Lst-learnable".
-Test the API: Use Postman with the endpoints in by live link "https://documenter.getpostman.com/view/42949149/2sB2qcBLVn" or  docs/postman_collection.json to create accounts, list data, and decrypt fields.
+Test the API: Use Postman with the endpoints in by live link "https://documenter.getpostman.com/view/42949149/2sB2qcCg7t" or  docs/postman_collection.json to create accounts, list data, and decrypt fields.
 
 Finable is my proof of what’s possible—secure, scalable, and built to impress. Ready to dive in, Edeba? Let’s make banking epic🙂🙂!
