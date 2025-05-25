@@ -16,7 +16,7 @@ Building finable was like cooking the perfect jollof rice—every ingredient had
 ## Shoutout to Edeba
 Big love to my favorite custodian, Edeba, for their top-notch guidance. Your insights on documentation and testing polished Lst-learnable into a Trial 5 gem.
 
-API Documentation
+## API Documentation
 
 Live API: Explore the action at "https://finable.onrender.com".
 Postman Collection: for the live postman documentation Dive check my published link; "https://documenter.getpostman.com/view/42949149/2sB2qcCg7t" or check into docs/postman_collection.json for detailed endpoints, covering account creation, listing, and decryption.
